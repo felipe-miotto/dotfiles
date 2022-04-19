@@ -1,0 +1,137 @@
+call plug#begin('~/.config/nvim/plugged')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline' "Setting up my status bar
+Plug 'vim-airline/vim-airline-themes' 
+Plug 'airblade/vim-gitgutter' "Shows changes if you're working with git
+"Syntax
+Plug 'tpope/vim-markdown'
+Plug 'vim-scripts/fountain.vim'
+Plug 'ap/vim-css-color' "Displays a preview of colors with CSS (like VS Code)
+"Color-schemes
+Plug 'morhetz/gruvbox' "gruvbox
+Plug 'kristijanhusak/vim-hybrid-material' "hybrid_material
+Plug 'NLKNguyen/papercolor-theme' "PaperColor
+Plug 'jacoborus/tender.vim' "tender
+Plug 'romainl/Apprentice' "apprentice
+Plug 'nanotech/jellybeans.vim' "jellybeans
+Plug 'ajh17/Spacegray.vim' "spacegray
+Plug 'gosukiwi/vim-atom-dark' "atom-dark
+Plug 'altercation/vim-colors-solarized' "solarized
+Plug 'arzg/vim-colors-xcode' "xcodedark ou xcodedarkhc - high contrast
+Plug 'joshdick/onedark.vim' "onedark
+Plug 'dbb/vim-gummybears-colorscheme' "gummybears
+Plug 'tomasr/molokai' "molokai
+call plug#end()
+
+"General Settings
+set encoding=UTF-8 nobackup nowritebackup nocursorline splitbelow splitright autoread wildmenu 
+set shiftwidth=4 autoindent smartindent tabstop=4 softtabstop=4 expandtab
+set cursorline
+
+filetype plugin indent on "Enabling Plugin % Indent
+syntax on "Turning Syntax on
+"set fillchars+=eob:\ # Mudar do ~ pra outro símbolo no final da página
+
+set hls is "Making sure search highlights words as we type them
+set ic
+
+set laststatus=2 "Setting the size for the command area, and airline status bar
+set cmdheight=1
+
+"Syntax Mappings
+au BufRead,BufNewFile *.fountain set filetype=fountain "Enabling fountain syntax
+
+"Status Line
+"set statusline=
+"set statusline+=%=
+"set statusline+=%#WildMenu#
+"set statusline+=\ %F
+"set statusline+=\ 
+"set statusline+=%#PmenuSel#
+"set statusline+=\ %y
+"set statusline+=\ %r
+"set statusline+=%#DiffChange#
+"set statusline+=\ %l/%L
+"set statusline+=\ [%c] "número do caractere sendo digitado na linha
+""set statusline+=\ [%n] "número da página no splitscreen
+
+"AirLineStatusBar
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+"Key-bindings
+let mapleader=" "
+nnoremap <leader>s :source ~/.config/nvim/init.vim<CR>
+nnoremap <leader><Space> :CtrlP<CR>
+nnoremap <leader>n :Lex!<CR>
+nnoremap <leader>z :set invrnu invnu<CR>
+
+nnoremap <leader><C-l> :set nofoldenable
+nnoremap <C-l> :set foldmethod=indent<CR>
+nnoremap <C-k> :set foldmethod=syntax<CR>
+
+"Last search does not show anymore
+nnoremap <leader>h :noh<CR> 
+
+nnoremap Q <nop>
+
+nnoremap <Up> :resize +2<CR>
+nnoremap <Down> :resize -2<CR>
+nnoremap <Left> :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+
+nnoremap <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
+
+map <F> :colorscheme gruvbox<CR>
+map <F2> :colorscheme PaperColor<CR>
+map <F3> :colorscheme apprentice<CR>
+map <F4> :colorscheme hybrid_material<CR>
+map <F5> :colorscheme hybrid_reverse<CR>
+map <F5> :colorscheme xcodedarkhc<CR>
+map <F6> :colorscheme jellybeans<CR>
+map <F7> :colorscheme onedark<CR>
+map <F8> :colorscheme tender<CR>
+map <F9> :colorscheme atom-dark<CR>
+"map <F> :colorscheme spacegray<CR>
+"map <F> :colorscheme solarized<CR>
+"map <F> :colorscheme hybrid_reverse<CR>
+"map <F> :colorscheme xcodedarkhc<CR>
+"map <F> :colorscheme xcodewwdc<CR>
+"map <F> :colorscheme gummybears<CR>
+"map <F> :colorscheme molokai<CR>
+
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
+"Color Settings
+colorscheme gruvbox
