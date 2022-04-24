@@ -9,6 +9,23 @@ set signcolumn=yes
 set nohlsearch nobackup noswapfile
 set wrap
 set splitbelow splitright
+set tabstop=4 softtabstop=4 shiftwidth=4
+set smartindent
+set incsearch
+set scrolloff=8
+highlight Normal guibg=none
+let g:rainbow_active = 1
+
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+augroup THE_PRIMAGEN
+    autocmd!
+    autocmd BufWritePre * :call TrimWhitespace()
+augroup END
 "===============================================================================================
 " Custom Keybindings
 "===============================================================================================
@@ -39,7 +56,7 @@ map <F6> :colorscheme murphy<CR>
 map <F7> :colorscheme palenight<CR>
 map <F8> :colorscheme srcery<CR>
 map <F9> :colorscheme space-vim-dark<CR>
-map <F10> :colorscheme PaperColor<CR> 
+map <F10> :colorscheme PaperColor<CR>
 "===============================================================================================
 endfunction
 

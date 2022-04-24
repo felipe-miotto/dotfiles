@@ -5,7 +5,10 @@ export EDITOR="nvim"
 # Aliases
 alias v='nvim'
 alias commit='git add -A; git commit -m'
-alias bkp='cp ~/.zshrc ~/Desktop/vscode/configs_bkp && 
+alias ll='ls -Alh'
+alias lld='lsd -Alh'
+alias lsd='lsd --group-dirs first'
+alias bkp='cp ~/.zshrc ~/Desktop/vscode/configs_bkp &&
 cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/vscode/configs_bkp &&
 cp ~/.Spacevim.d/init.toml ~/Desktop/vscode/configs_bkp'
 
@@ -20,14 +23,14 @@ zstyle ':vcs_info:*' enable git
 
 # Prompt
 declare -a PROMPTS
-PROMPTS=(   
-    "♦" 
-    "♣" 
-    "♠" 
-    "♥"  
+PROMPTS=(
+    "♦"
+    "♣"
+    "♠"
+    "♥"
 )
 RANDOM=$$$(date +%s)
 ignition=${PROMPTS[$RANDOM % ${#RANDOM[*]}]}
 # 179
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f%B%F{186}[%f%F{138}%n%f%F{212}༆ %f%F{223}%1~%f%F{186}]%f%F{43} $ignition%f %b'
-# ＊❯ ❱ ༆ 
+# ＊❯ ❱ ༆
