@@ -5,6 +5,9 @@ export EDITOR="nvim"
 # Aliases
 alias v='nvim'
 alias commit='git add -A; git commit -m'
+alias bkp='cp ~/.zshrc ~/Desktop/vscode/configs_bkp && 
+cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/vscode/configs_bkp &&
+cp ~/.Spacevim.d/init.toml ~/Desktop/vscode/configs_bkp'
 
 # Git Right Side Prompt:
 autoload -Uz vcs_info
@@ -28,5 +31,3 @@ ignition=${PROMPTS[$RANDOM % ${#RANDOM[*]}]}
 # 179
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f%B%F{186}[%f%F{138}%n%f%F{212}༆ %f%F{223}%1~%f%F{186}]%f%F{43} $ignition%f %b'
 # ＊❯ ❱ ༆ 
-
-# lf config
