@@ -58,6 +58,14 @@ map <F8> :colorscheme srcery<CR>
 map <F9> :colorscheme space-vim-dark<CR>
 map <F10> :colorscheme PaperColor<CR>
 "===============================================================================================
+" Git Gutter
+"===============================================================================================
+highlight GitGutterAdd guifg=#009900 ctermfg=Green
+highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
+highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
+let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
+"===============================================================================================
 endfunction
 
 " Na SpaceVim.vim, personal configs a partir da linha 1405
