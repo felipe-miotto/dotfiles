@@ -15,10 +15,10 @@ alias commit='git add -A; git commit -m'
 alias ll='ls -Alh'
 alias lld='lsd -Alh'
 alias lsd='lsd --group-dirs first'
-alias bkp='cp ~/.zshrc ~/Desktop/vscode/configs_bkp &&
-cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/vscode/configs_bkp &&
-cp ~/.Spacevim.d/init.toml ~/Desktop/vscode/configs_bkp &&
-cp ~/.config/alacritty/alacritty.yml ~/Desktop/vscode/configs_bkp'
+alias bkp='cp ~/.zshrc ~/Desktop/backupfiles &&
+cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/backupfiles &&
+cp ~/.Spacevim.d/init.toml ~/Desktop/backupfiles &&
+cp ~/.config/alacritty/alacritty.yml ~/Desktop/backupfiles'
 
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
