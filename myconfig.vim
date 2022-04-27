@@ -14,6 +14,9 @@ set smartindent
 set incsearch
 set scrolloff=8
 highlight Normal guibg=none
+" Fix transparent background in Vim/ Neovim:
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 "===============================================================================================
 " Custom Keybindings
 "===============================================================================================

@@ -17,7 +17,8 @@ alias lld='lsd -Alh'
 alias lsd='lsd --group-dirs first'
 alias bkp='cp ~/.zshrc ~/Desktop/vscode/configs_bkp &&
 cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/vscode/configs_bkp &&
-cp ~/.Spacevim.d/init.toml ~/Desktop/vscode/configs_bkp'
+cp ~/.Spacevim.d/init.toml ~/Desktop/vscode/configs_bkp &&
+cp ~/.config/alacritty/alacritty.yml ~/Desktop/vscode/configs_bkp'
 
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
