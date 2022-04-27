@@ -14,18 +14,6 @@ set smartindent
 set incsearch
 set scrolloff=8
 highlight Normal guibg=none
-let g:rainbow_active = 1
-
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-augroup THE_PRIMAGEN
-    autocmd!
-    autocmd BufWritePre * :call TrimWhitespace()
-augroup END
 "===============================================================================================
 " Custom Keybindings
 "===============================================================================================
@@ -57,14 +45,6 @@ map <F7> :colorscheme palenight<CR>
 map <F8> :colorscheme srcery<CR>
 map <F9> :colorscheme space-vim-dark<CR>
 map <F10> :colorscheme PaperColor<CR>
-"===============================================================================================
-" Git Gutter
-"===============================================================================================
-highlight GitGutterAdd guifg=#009900 ctermfg=Green
-highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
-highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
-let g:gitgutter_enabled = 1
-let g:gitgutter_map_keys = 0
 "===============================================================================================
 endfunction
 

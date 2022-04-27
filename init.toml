@@ -101,3 +101,7 @@ merged = 0
 [[custom_plugins]]
 repo = "tpope/vim-commentary"
 merged = 0
+
+[[custom_plugins]]
+repo = "vim-python/python-syntax"
+merged = 0
