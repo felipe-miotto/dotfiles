@@ -13,7 +13,8 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set smartindent
 set incsearch
 set scrolloff=8
-highlight Normal guibg=none
+set cursorline
+" highlight Normal guibg=none
 " Fix transparent background in Vim/ Neovim:
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
