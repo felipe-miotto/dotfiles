@@ -1,0 +1,74 @@
+l# Basic Settings
+set hidden true
+set icons true
+set color256 true
+set ignorecase true
+
+# Custom Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd makefile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+# Archive bindings
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+# Execute exe
+cmd execute ${{
+  wine "$f"
+}}
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map f
+
+map au unarchive
+map ae execute
+map mf makefile
+map md mkdir
+map <enter> open
+map . set hidden!
+map y copy
+map p paste
+map x cut
+map C clear
+map R reload
+map DD delete
+
+# Movement bindings
+map gij cd ~/desktop/intellij
+map gvs cd ~/desktop/vscode
+
+# Leave some space at the top and the bottom of the screen
+set scrolloff 10
