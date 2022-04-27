@@ -16,11 +16,11 @@ alias ll='ls -Alh'
 alias lld='lsd -Alh'
 alias lsd='lsd --group-dirs first'
 alias dot='cp ~/.zshrc ~/Desktop/dotfiles &&
-cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/dotfiles &&
-cp ~/.Spacevim.d/init.toml ~/Desktop/dotfiles &&
-cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles
-cp ~/.config/lf/lfrc ~/Desktop/dotfiles &&
-cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles'
+cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/dotfiles/spacevim &&
+cp ~/.Spacevim.d/init.toml ~/Desktop/dotfiles/spacevim &&
+cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles/alacritty &&
+cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
+cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim'
 
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
