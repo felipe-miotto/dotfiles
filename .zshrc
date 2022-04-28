@@ -16,6 +16,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 # Aliases
 alias v='nvim'
 alias commit='git add -A; git commit -m'
+alias pip='pip3'
+alias python='python3'
 alias ll='ls -Alh'
 alias lld='lsd -Alh'
 alias lsd='lsd --group-dirs first'
@@ -61,3 +63,5 @@ neofetch
 
 # Fortune
 fortune
+
+echo ' '
