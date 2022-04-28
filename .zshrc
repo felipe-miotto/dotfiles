@@ -9,6 +9,10 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 export EDITOR="nvim"
 
+# Case Insensitive Tab Completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
 # Aliases
 alias v='nvim'
 alias commit='git add -A; git commit -m'
