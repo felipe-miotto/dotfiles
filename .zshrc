@@ -54,3 +54,6 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Neofetch
 neofetch
+
+# Fortune
+fortune
