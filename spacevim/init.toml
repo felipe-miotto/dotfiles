@@ -105,3 +105,6 @@ merged = 0
 [[custom_plugins]]
 repo = "vim-python/python-syntax"
 merged = 0
+
+[[custom_plugins]]
+  name = "dracula/vim"
