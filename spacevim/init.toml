@@ -11,7 +11,11 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "gruvbox"
+    # colorscheme = "gruvbox"
+    # colorscheme = "nord"
+    # colorscheme = "dracula"
+    # colorscheme = "doom-one"
+    colorscheme = "OceanicNext"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -107,4 +111,18 @@ repo = "vim-python/python-syntax"
 merged = 0
 
 [[custom_plugins]]
-  name = "dracula/vim"
+  repo = "dracula/vim"
+  name = "dracula"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "phanviet/vim-monokai-pro"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "romgrk/doom-one.vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "mhartington/oceanic-next"
+  merged = 0

@@ -43,9 +43,9 @@ schemes:
     primary:
       background: '#282c34'
       foreground: '#bbc2cf'
-    cursor:
-      text: CellBackground
-      cursor: '#528bff'
+    # cursor:
+    #   text: CellBackground
+    #   cursor: '#528bff'
     selection:
       text: CellForeground
       background: '#3e4451'
@@ -392,7 +392,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *GruvboxDark
+colors: *OceanicNext
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
@@ -402,6 +402,7 @@ colors: *GruvboxDark
 cursor:
     style: Block
     unfocused_hollow: true
+    custom_cursor_colors: true
 
 key_bindings:
   - { key: N,        mods: Control|Shift,    action: SpawnNewInstance    }
