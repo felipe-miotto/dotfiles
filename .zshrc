@@ -17,8 +17,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 alias v='nvim'
 alias pip='pip3'
 alias python='python3'
-alias ll='ls -Alh'
-alias lld='lsd -Alh'
+alias lsa='ls -Alh'
+alias ll='lsd -Alh'
 alias lsd='lsd --group-dirs first'
 
 # Script Alias
@@ -29,6 +29,8 @@ cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles/alacritty &&
 cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
 cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim &&
 cp ~/.gitconfig ~/Desktop/dotfiles'
+alias update='zsh ~/Desktop/scripts/update.sh'
+alias updateconda='zsh ~/Desktop/scripts/updateconda.sh'
 
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
