@@ -29,6 +29,7 @@
     uncommit = reset --soft HEAD~1 # Desfazer o último commit mas manter os arquivos
 	gl = config --global -l
 	d = diff
+    s = show
     lol = !git --no-pager log --oneline
     lola = !git --no-pager log --oneline --decorate
     ignore = !( [ ! -z `grep "^$GIT_PREFIX$1$" ".gitignore"` ] ) || echo "$GIT_PREFIX$1" >> .gitignore && echo > /dev/null
