@@ -37,6 +37,9 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 nnoremap <C-J> yyp
 nnoremap <C-K> yyP
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap jj <Esc>
 "===============================================================================================
 " Colorschemes Shortcuts
 "===============================================================================================
