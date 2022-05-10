@@ -28,7 +28,8 @@ cp ~/.Spacevim.d/init.toml ~/Desktop/dotfiles/spacevim &&
 cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles/alacritty &&
 cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
 cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim &&
-cp ~/.gitconfig ~/Desktop/dotfiles'
+cp ~/.gitconfig ~/Desktop/dotfiles &&
+cp ~/.gitignore_global ~/Desktop/dotfiles'
 alias update='zsh ~/Desktop/scripts/update.sh'
 alias updateconda='zsh ~/Desktop/scripts/updateconda.sh'
 
