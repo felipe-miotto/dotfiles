@@ -27,7 +27,8 @@ cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/dotfiles/spacevim &&
 cp ~/.Spacevim.d/init.toml ~/Desktop/dotfiles/spacevim &&
 cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles/alacritty &&
 cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
-cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim'
+cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim &&
+cp ~/.gitconfig ~/Desktop/dotfiles'
 
 # Git Alias
 # alias commit='git add -A; git commit -m'
