@@ -15,19 +15,27 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # Aliases
 alias v='nvim'
-alias commit='git add -A; git commit -m'
-alias unstage='git reset HEAD --'
 alias pip='pip3'
 alias python='python3'
 alias ll='ls -Alh'
 alias lld='lsd -Alh'
 alias lsd='lsd --group-dirs first'
+
+# Script Alias
 alias dot='cp ~/.zshrc ~/Desktop/dotfiles &&
 cp ~/.SpaceVim.d/Autoload/myconfig.vim ~/Desktop/dotfiles/spacevim &&
 cp ~/.Spacevim.d/init.toml ~/Desktop/dotfiles/spacevim &&
 cp ~/.config/alacritty/alacritty.yml ~/Desktop/dotfiles/alacritty &&
 cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
 cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim'
+
+# Git Aliases
+alias commit='git add -A; git commit -m'
+alias unstage='git reset HEAD --'
+alias pom='push -u origin master'
+alias co='checkout' # Escreve depois o nome da branch, navega para ela
+alias cm='checkout master' # Volta para a master branch
+alias cb='checkout -b' # Escreve o nome da branch, cria ela e faz um checkout para a nova branch
 
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
