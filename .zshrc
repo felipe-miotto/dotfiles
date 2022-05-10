@@ -30,14 +30,6 @@ cp ~/.config/lf/lfrc ~/Desktop/dotfiles/lf &&
 cp ~/.Spacevim/autoload/Spacevim.vim ~/Desktop/dotfiles/spacevim &&
 cp ~/.gitconfig ~/Desktop/dotfiles'
 
-# Git Alias
-# alias commit='git add -A; git commit -m'
-# alias unstage='git reset HEAD --'
-# alias pom='git push -u origin master'
-# alias co='git checkout' # Escreve depois o nome da branch, navega para ela
-# alias cm='git checkout master' # Volta para a master branch
-# alias cb='git checkout -b' # Escreve o nome da branch, cria ela e faz um checkout para a nova branch
-
 #  Git Right Side Prompt:
 # autoload -Uz vcs_info
 # precmd_vcs_info() { vcs_info }
