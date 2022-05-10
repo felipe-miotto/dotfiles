@@ -10,6 +10,7 @@
 	defaultBranch = master
 [alias]
     ac = !git add -A && git commit -m
+    save = !git add -A && git commit -m 'chore: save point'
     unstage = reset HEAD --
     pom = push -u origin master
     ps = push
