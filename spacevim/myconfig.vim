@@ -20,7 +20,6 @@ set termguicolors
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 "===============================================================================================
-"
 " Custom Keybindings
 "===============================================================================================
 nnoremap <C-w> :w<CR>
