@@ -7,7 +7,7 @@
 	name = Felipe Miotto
 	email = 160151821@aluno.unb.br
 [init]
-	defaultBranch = main
+	defaultBranch = master
 [core]
     excludesfile = /Users/felipemiotto/.gitignore_global
 [alias]
