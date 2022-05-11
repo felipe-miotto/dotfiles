@@ -7,19 +7,19 @@
 	name = Felipe Miotto
 	email = 160151821@aluno.unb.br
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [core]
     excludesfile = /Users/felipemiotto/.gitignore_global
 [alias]
     rao = remote add origin # Seguido do link do repositório no GitHub
-    pom = push -u origin master # Adicionar o repositório para a nuvem
+    pom = push -u origin main # Adicionar o repositório para a nuvem
     ac = !git add -A && git commit -m
     save = !git add -A && git commit -m 'chore: save point'
     unstage = reset HEAD --
     ps = push
     ci = "!f() { git commit -m \"$*\"; }; f"
     co = checkout # Escreve depois o nome da branch, navega para ela
-    cm = checkout master # Volta para a master branch
+    cm = checkout main # Volta para a master branch
     cb = checkout -b # Escreve o nome da branch, cria ela e faz um checkout para a nova branch
     mg = merge # Adicionar as novas funcionalidades ao projeto em produção -- git mg <nome da branch>
     del = branch -D # Deletar a branch da nova funcionalidade, depois de aplicar no projeto -- git del <nome da branch>
