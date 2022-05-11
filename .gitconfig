@@ -12,6 +12,7 @@
     excludesfile = /Users/felipemiotto/.gitignore_global
 [alias]
     rao = remote add origin # Seguido do link do repositório no GitHub
+    brmain = branch -M main # Mudando a branch, caso esteja Master, para Main
     pom = push -u origin main # Adicionar o repositório para a nuvem
     ac = !git add -A && git commit -m
     save = !git add -A && git commit -m 'chore: save point'
