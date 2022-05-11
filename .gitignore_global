@@ -5,6 +5,7 @@ Icon?
 .DS_Store
 
 ### Vscode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -22,6 +23,7 @@ Icon?
 target/
 *.iml
 .idea/*
+.idea/
 
 ### Common credential files ###
 **/credentials.json
