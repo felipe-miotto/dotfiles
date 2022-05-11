@@ -33,7 +33,7 @@
     incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)-%ar%Creset' ..@{u})
     outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
     undo = checkout -- # Completa com o nome do arquivo, ele volta a como estava antes dos commits
-    rename = git commit --amend -m # Rename last commit
+    rename = commit --amend -m # Rename last commit
     uncommit = reset --soft HEAD~1 # Desfazer o último commit mas manter os arquivos
 	gl = config --global -l
 	d = diff
