@@ -20,6 +20,10 @@
     co = checkout # Escreve depois o nome da branch, navega para ela
     cm = checkout master # Volta para a master branch
     cb = checkout -b # Escreve o nome da branch, cria ela e faz um checkout para a nova branch
+    mg = merge # Adicionar as novas funcionalidades ao projeto em produção -- git mg <nome da branch>
+    del = branch -D # Deletar a branch da nova funcionalidade, depois de aplicar no projeto -- git del <nome da branch>
+    br = branch # Mostrar as branches do projeto
+    s = show
     st = status -sb
     sf = show --name-only
     lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
@@ -29,7 +33,6 @@
     uncommit = reset --soft HEAD~1 # Desfazer o último commit mas manter os arquivos
 	gl = config --global -l
 	d = diff
-    s = show
     lol = !git --no-pager log --oneline
     lola = !git --no-pager log --oneline --decorate
     ignore = !( [ ! -z `grep "^$GIT_PREFIX$1$" ".gitignore"` ] ) || echo "$GIT_PREFIX$1" >> .gitignore && echo > /dev/null
