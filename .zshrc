@@ -20,6 +20,7 @@ alias python='python3'
 alias lsa='ls -Alh'
 alias ll='lsd -Alh'
 alias lsd='lsd --group-dirs first'
+alias coffee='caffeinate -d' # Press ^C to end command
 
 # Script Alias
 alias dot='cp ~/.zshrc ~/Desktop/dotfiles &&
